@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex items-center space-x-2">
           {/* Logo */}
           <Image src="/pricezy-high-resolution-logo.png" alt="App logo" width={40} height={40} />
-          <h1 className="text-2xl font-bold text-blue-600">YourAppName</h1>
+          <h1 className="text-2xl font-bold text-blue-600">Pricezy</h1>
         </div>
         <button className="bg-blue-600 text-white px-4 py-2 rounded-md font-medium">
           Get Started
