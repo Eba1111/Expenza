@@ -2,38 +2,39 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        {/* You can replace this image with your own logo or remove it */}
-        <Image
-          className="dark:invert"
-          src="/logo.png" // Use your custom image here
-          alt="Expenza logo"
-          width={180}
-          height={38}
-          priority
-        />
+    <div className="flex flex-col items-center bg-gray-100 min-h-screen">
+      {/* Header Section */}
+      <header className="w-full bg-white shadow-md flex justify-between items-center p-4">
+        <div className="flex items-center space-x-2">
+          {/* Logo */}
+          <Image src="/pricezy-high-resolution-logo.png" alt="App logo" width={40} height={40} />
+          <h1 className="text-2xl font-bold text-blue-600">YourAppName</h1>
+        </div>
+        <button className="bg-blue-600 text-white px-4 py-2 rounded-md font-medium">
+          Get Started
+        </button>
+      </header>
 
-        {/* Welcome message or app description */}
-        <h1 className="text-3xl font-bold text-center sm:text-left">
-          Welcome to Expenza!
-        </h1>
-        <p className="text-center sm:text-left">
-          Your go-to tool for tracking product prices across online stores.
-        </p>
-
-        {/* Add the "Made by" text */}
-        <h2 className="text-xl font-semibold text-center sm:text-left">
-          Made by Eba
+      {/* Hero Section */}
+      <main className="flex flex-col items-center justify-center flex-grow p-8 text-center">
+        <h2 className="text-4xl font-extrabold text-black mb-2">
+          Manage Your Expense
         </h2>
-
-        {/* You can add more sections here */}
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-medium">
-          <li className="mb-2">Track prices easily across multiple stores.</li>
-          <li className="mb-2">Get alerts when products go on sale.</li>
-          <li className="mb-2">Stay within budget with price comparisons.</li>
-        </ol>
+        <h3 className="text-2xl font-semibold text-blue-600 mb-4">
+          Control Your Money
+        </h3>
+        <p className="text-gray-600 max-w-lg">
+          Find the cheapest price for your product
+        </p>
+        <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-md font-medium text-lg">
+          Get Started Now
+        </button>
       </main>
+
+      {/* Dashboard Preview Image */}
+      <div className="w-full flex justify-center mt-12">
+        <Image src="/jason-briscoe-w2uvoJo_woE-unsplash.png" alt="Dashboard preview" width={800} height={400} />
+      </div>
     </div>
   );
 }
