@@ -22,6 +22,11 @@ export default function Home() {
           Your go-to tool for tracking product prices across online stores.
         </p>
 
+        {/* Add the "Made by" text */}
+        <h2 className="text-xl font-semibold text-center sm:text-left">
+          Made by Eba
+        </h2>
+
         {/* You can add more sections here */}
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-medium">
           <li className="mb-2">Track prices easily across multiple stores.</li>
