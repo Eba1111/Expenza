@@ -17,10 +17,10 @@ const HomePage = () => {
   };
 
   return (
-    <div style={{ 
-      backgroundImage: "url('/images/background.jpeg')", 
-      backgroundSize: 'cover', 
-      backgroundPosition: 'center', 
+    <div style={{
+      backgroundImage: "url('/images/background.jpeg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
       height: '100vh',
       color: '#fff',
       textAlign: 'center',
@@ -29,20 +29,12 @@ const HomePage = () => {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      {/* Optional: Replace with just text or no image */}
-      <div style={{ marginBottom: '20px' }}>
-        <h1 style={{ fontSize: '2rem' }}>Silent Mentor</h1>
-      </div>
-
-      {/* Welcome Text */}
-      <h1 style={{ fontSize: '2rem', marginTop: '1rem' }}>Welcome to Silent Mentor</h1>
+      <h1 style={{ fontSize: '2rem' }}>Welcome to Silent Mentor</h1>
       <p style={{ fontSize: '1.2rem', margin: '0.5rem' }}>
         Speak to minds, speak your mind
       </p>
-
-      {/* Sign-In Button */}
-      <button 
-        onClick={handleSignIn} 
+      <button
+        onClick={handleSignIn}
         style={{
           marginTop: '20px',
           padding: '10px 20px',
@@ -57,12 +49,11 @@ const HomePage = () => {
         Sign in with Google
       </button>
 
-      {/* Footer */}
-      <footer style={{ 
-        position: 'absolute', 
-        bottom: '10px', 
-        right: '10px', 
-        fontSize: '0.8rem' 
+      <footer style={{
+        position: 'absolute',
+        bottom: '10px',
+        right: '10px',
+        fontSize: '0.8rem'
       }}>
         <p>made by Eba Gude</p>
       </footer>
