@@ -1,6 +1,6 @@
 import React from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { app } from '../firebase'; // Ensure Firebase is correctly configured
+import { app } from '../firebase'; // Correct path to firebase.js
 
 const HomePage = () => {
   const auth = getAuth(app);
@@ -17,18 +17,20 @@ const HomePage = () => {
   };
 
   return (
-    <div style={{ 
-      backgroundImage: "url('/images/background.jpeg')", 
-      backgroundSize: 'cover', 
-      backgroundPosition: 'center', 
-      height: '100vh',
-      color: '#fff',
-      textAlign: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
+    <div
+      style={{
+        backgroundImage: "url('/images/background.jpeg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh',
+        color: '#fff',
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       {/* Welcome Text */}
       <h1 style={{ fontSize: '2rem', marginTop: '1rem' }}>Welcome to Silent Mentor</h1>
       <p style={{ fontSize: '1.2rem', margin: '0.5rem' }}>
@@ -36,8 +38,8 @@ const HomePage = () => {
       </p>
 
       {/* Sign-In Button */}
-      <button 
-        onClick={handleSignIn} 
+      <button
+        onClick={handleSignIn}
         style={{
           marginTop: '20px',
           padding: '10px 20px',
@@ -46,19 +48,21 @@ const HomePage = () => {
           color: '#fff',
           border: 'none',
           borderRadius: '5px',
-          cursor: 'pointer'
+          cursor: 'pointer',
         }}
       >
         Sign in with Google
       </button>
 
       {/* Footer */}
-      <footer style={{ 
-        position: 'absolute', 
-        bottom: '10px', 
-        right: '10px', 
-        fontSize: '0.8rem' 
-      }}>
+      <footer
+        style={{
+          position: 'absolute',
+          bottom: '10px',
+          right: '10px',
+          fontSize: '0.8rem',
+        }}
+      >
         <p>made by Eba Gude</p>
       </footer>
     </div>

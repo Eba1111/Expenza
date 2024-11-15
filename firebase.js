@@ -1,8 +1,8 @@
-// Import required functions from the Firebase SDKs
+// firebase.js
+
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
-// Your Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBH9MdyiKWSeFAgsGhbLYbqOAVC2XP5e0w",
   authDomain: "pricezy-da58e.firebaseapp.com",
