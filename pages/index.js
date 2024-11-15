@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase'; // Make sure Firebase is correctly configured
 
@@ -30,15 +29,9 @@ const HomePage = () => {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      {/* Logo */}
-      <div>
-        <Image 
-          src="/images/logo.jpeg" 
-          alt="Silent Mentor Logo" 
-          width={300} 
-          height={300} 
-          priority 
-        />
+      {/* Optional: Replace with just text or no image */}
+      <div style={{ marginBottom: '20px' }}>
+        <h1 style={{ fontSize: '2rem' }}>Silent Mentor</h1>
       </div>
 
       {/* Welcome Text */}
