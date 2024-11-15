@@ -1,6 +1,6 @@
 import React from 'react';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { app } from '../firebase'; // Correct path to firebase.js
+import { app } from '../firebase'; // Correct path to the firebase.js file
 
 const HomePage = () => {
   const auth = getAuth(app);
