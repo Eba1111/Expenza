@@ -1,0 +1,34 @@
+/* style.css */
+.personalization-page {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.personalization-page h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
